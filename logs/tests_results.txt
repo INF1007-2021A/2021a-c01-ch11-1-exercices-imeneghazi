@@ -1,0 +1,36 @@
+test_crit (__main__.TestCharacter) ... ok
+test_init (__main__.TestCharacter) ... ok
+test_name (__main__.TestCharacter) ... ok
+test_weapon (__main__.TestCharacter) ... ok
+test_init (__main__.TestWeapon) ... ERROR
+test_name (__main__.TestWeapon) ... ERROR
+test_unarmed (__main__.TestWeapon) ... ERROR
+
+======================================================================
+ERROR: test_init (__main__.TestWeapon)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Imène GHAZI\Documents\Polytechnique Montréal\A21\INF1007\Exercices de cours\2021a-c01-ch11-1-exercices-imeneghazi\test_exercice.py", line 19, in setUp
+    self.w4 = Weapon.make_unarmed(self)
+TypeError: make_unarmed() takes 1 positional argument but 2 were given
+
+======================================================================
+ERROR: test_name (__main__.TestWeapon)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Imène GHAZI\Documents\Polytechnique Montréal\A21\INF1007\Exercices de cours\2021a-c01-ch11-1-exercices-imeneghazi\test_exercice.py", line 19, in setUp
+    self.w4 = Weapon.make_unarmed(self)
+TypeError: make_unarmed() takes 1 positional argument but 2 were given
+
+======================================================================
+ERROR: test_unarmed (__main__.TestWeapon)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Imène GHAZI\Documents\Polytechnique Montréal\A21\INF1007\Exercices de cours\2021a-c01-ch11-1-exercices-imeneghazi\test_exercice.py", line 19, in setUp
+    self.w4 = Weapon.make_unarmed(self)
+TypeError: make_unarmed() takes 1 positional argument but 2 were given
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.002s
+
+FAILED (errors=3)

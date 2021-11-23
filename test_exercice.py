@@ -16,7 +16,7 @@ class TestWeapon(unittest.TestCase):
 		self.w1 = Weapon("w1", 1, 69)
 		self.w2 = Weapon("w2", 69, 1)
 		self.w3 = Weapon("w3", 69, 42)
-		self.w4 = Weapon.make_unarmed()
+		self.w4 = Weapon.make_unarmed(self)
 
 	def test_name(self):
 		with self.assertRaises(AttributeError):
@@ -35,7 +35,7 @@ class TestWeapon(unittest.TestCase):
 
 class TestCharacter(unittest.TestCase):
 	def setUp(self):
-		self.hp_only =  Character("hp_only",  69,  1,  1,  1)
+		self.hp_only = Character("hp_only",  69,  1,  1,  1)
 		self.atk_only = Character("atk_only",  1, 69,  1,  1)
 		self.def_only = Character("def_only",  1,  1, 69,  1)
 		self.lvl_only = Character("lvl_only",  1,  1,  1, 69)
